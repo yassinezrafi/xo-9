@@ -199,6 +199,7 @@ button:hover{
         position: absolute;
         left: 0;
         bottom: 0%;
+        height: 5%;
     }
     button:hover{
         background-color: brown;
@@ -213,6 +214,7 @@ button:hover{
         left: 200px;
         bottom: 0%;
         width: 100px;
+        height: 5%;
     
     }
     }
@@ -308,6 +310,7 @@ button:hover{
             position: absolute;
             left: 0;
             bottom: 0%;
+            height: 5%;
         }
         button:hover{
             background-color: brown;
@@ -322,6 +325,7 @@ button:hover{
             left: 200px;
             bottom: 0%;
             width: 30%;
+            height: 5%;
         
         }
     }
@@ -417,6 +421,7 @@ button:hover{
             position: absolute;
             left: 0;
             bottom: 0%;
+            height: 5%;
         }
         button:hover{
             background-color: brown;
@@ -431,6 +436,7 @@ button:hover{
             left: 200px;
             bottom: 0%;
             width: 30%;
+            height: 5%;
         
         }
     }
@@ -526,6 +532,7 @@ button:hover{
             position: absolute;
             left: 0;
             bottom: 0%;
+            height: 5%;
         }
         button:hover{
             background-color: brown;
@@ -540,6 +547,7 @@ button:hover{
             left: 200px;
             bottom: 0%;
             width: 30%;
+            height: 5%;
         
         }
     }
@@ -635,6 +643,7 @@ button:hover{
             position: absolute;
             left: 0;
             bottom: 0%;
+            height: 5%;
         }
         button:hover{
             background-color: brown;
@@ -649,6 +658,7 @@ button:hover{
             left: 200px;
             bottom: 0%;
             width: 30%;
+            height: 5%;
         
         }
     }
@@ -744,6 +754,7 @@ button:hover{
             position: absolute;
             left: 0;
             bottom: 0%;
+            height: 5%;
         }
         button:hover{
             background-color: brown;
@@ -758,6 +769,7 @@ button:hover{
             left: 200px;
             bottom: 0%;
             width: 30%;
+            height: 5%;
         
         }
     }
