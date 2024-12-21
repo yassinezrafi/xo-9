@@ -1,777 +1,167 @@
-.big{
-    font-size:130px;
-    width: 150px;
-    height: 150px;
-    margin: 5px;
-    left: auto;
-    float: left;
-    background-color: black;
-    align-self:center ;
-    text-align: center;
-    top: 1px;
-    color: white;
-}
-.small{
-    font-size: 40px;
-    text-align: center;
-    margin: 2px;
-    background-color: aliceblue;
-    width: 30%;
-    height: 30%;
-    float: left;
-    align-self: center;
-
-    
-}
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
-    width: 60%; 
-    max-width: 1200px; 
-    margin: 20px auto; 
-}
-.small:hover{
-    background-color: rgb(167, 164, 164);
-}
-.play1{
-    float: left;
-    font-size: 15px;
-    color: blue;
-    text-align: left;
-    display: block;
-    position: absolute;
-    left: 3%;
-
-
-}
-.play2{
-    position: absolute;
-    float: right;
-    font-size: 15px;
-    color: red;
-    text-align: left;
-    display: flex;
-    right: 10%;
-    
-}
-.splay1{
-    position: absolute;
-    top: 100px;    
-    float: left;
-    font-size: 15px;
-    color: blue;
-    text-align: left;
-    display: flex;
-}
-.splay2{
-    position: absolute;
-    top: 100px;    
-    float: left;
-    font-size: 15px;
-    color: red;
-    text-align: left;
-    display: flex;
-    right: 10%;
-    
-}
-body{
+body {
     height: 90%;
     width: 90%;
 }
-button{
+
+button {
     margin: auto;
     display: block;
     border-radius: 12px;
-    font-size: 25px;
+    font-size: 15px;
     position: absolute;
     left: 0;
-    top: 400px;
+    bottom: 0;
+    height: 5%;
 }
-button:hover{
+
+button:hover {
     background-color: brown;
     color: white;
 }
-#chnp{
+
+#chnp {
     margin: auto;
     display: block;
     border-radius: 12px;
-    font-size: 25px;
+    font-size: 15px;
     position: absolute;
-    left: 90%;
-    top: 400px;
-    width: 100px;
-
+    left: 200px;
+    bottom: 0;
+    width: 30%;
+    height: 5%;
 }
 
-@media(max-width:768px){
-     .big{
-        font-size:71px;
+/* Main Container */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 1200px;
+}
+
+/* Card Styles */
+.big, .small {
+    margin: 5px;
+    float: left;
+    align-self: center;
+    text-align: center;
+}
+
+.big {
+    font-size: 130px;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+
+.small {
+    font-size: 40px;
+    width: 30%;
+    height: 30%;
+    background-color: aliceblue;
+}
+
+.small:hover {
+    background-color: rgb(167, 164, 164);
+}
+
+/* Floating Text Styles */
+.play1, .play2, .splay1, .splay2 {
+    position: absolute;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.play1 {
+    color: blue;
+    left: 3%;
+}
+
+.play2 {
+    color: red;
+    right: 10%;
+}
+
+.splay1 {
+    top: 100px;
+    color: blue;
+    left: 3%;
+}
+
+.splay2 {
+    top: 100px;
+    color: red;
+    right: 10%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .big {
+        font-size: 71px;
         width: 100px;
         height: 100px;
-        margin: 2px;
-        left: auto;
-        float: left;
-        background-color: black;
-        align-self:center ;
-        text-align: center;
-        top: 1px;
-        color: white;
-    }
-    .small{
-        font-size: 10px;
-        text-align: center;
-        margin: 2px;
-        background-color: aliceblue;
-        width: 27%;
-        height: 27%;
-        float: left;
-        align-self: center;
-    
-        
-    }
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center; 
-        margin: 2px auto;
-    }
-    .small:hover{
-        background-color: rgb(167, 164, 164);
-    }
-    .play1{
-        float: left;
-        font-size: 7px;
-        color: blue;
-        text-align: left;
-        display: block;
-        position: absolute;
-        left: 3%;
-        bottom: 20%;
-    
-    
     }
 
-    .splay1{
-        position: absolute;
-        bottom:10%;      
-        float: left;
-        font-size: 15px;
-        color: blue;
-        text-align: left;
-        display: flex;
-        left: 3%;
-        bottom: 15%;
+    .small {
+        font-size: 10px;
+        width: 27%;
+        height: 27%;
     }
-    .play2{
-        position: absolute;
-        float: right;
+
+    .play1, .play2 {
         font-size: 7px;
-        color: red;
-        text-align: left;
-        display: flex;
-        left: 3%;
-        bottom: 10%;
-        
+        bottom: 20%;
     }
-    .splay2{
-        position: absolute;
-        bottom:10%;      
-        float: right;
+
+    .splay1, .splay2 {
         font-size: 15px;
-        color: red;
-        text-align: left;
-        display: flex;
-        left: 3%;
-        bottom: 5%;
+        bottom: 10%;
     }
-    body{
-        height: 90%;
-        width: 90%;
+}
+
+@media (max-width: 470px) {
+    .big {
+        font-size: 55px;
+        width: 60px;
+        height: 60px;
     }
-    button{
-        margin: auto;
-        display: block;
-        border-radius: 12px;
-        font-size: 25px;
-        position: absolute;
-        left: 0;
-        bottom: 0%;
-        height: 5%;
+
+    .small {
+        width: 23%;
+        height: 23%;
     }
-    button:hover{
-        background-color: brown;
-        color: white;
+
+    .play1, .play2 {
+        font-size: 6px;
     }
-    #chnp{
-        margin: auto;
-        display: block;
-        border-radius: 12px;
-        font-size: 25px;
-        position: absolute;
-        left: 200px;
-        bottom: 0%;
-        width: 100px;
-        height: 5%;
-    
+
+    .splay1, .splay2 {
+        font-size: 12px;
     }
+}
+
+@media (max-width: 300px) {
+    .big {
+        font-size: 55px;
+        width: 40px;
+        height: 40px;
     }
-    @media(max-width:590px){
-        .big{
-            font-size:55px;
-            width: 80px;
-            height: 80px;
-            margin: 2px;
-            left: auto;
-            float: left;
-            background-color: black;
-            align-self:center ;
-            text-align: center;
-            top: 1px;
-            color: white;
-        }
-        .small{
-            font-size: 10px;
-            text-align: center;
-            margin: 2px;
-            background-color: aliceblue;
-            width: 27%;
-            height: 27%;
-            float: left;
-            align-self: center;
-        
-            
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center; 
-            margin: 2px auto;
-        }
-        .small:hover{
-            background-color: rgb(167, 164, 164);
-        }
-        .play1{
-            float: left;
-            font-size: 6px;
-            color: blue;
-            text-align: left;
-            display: block;
-            position: absolute;
-            left: 3%;
-            bottom: 20%;
-        
-        
-        }
-    
-        .splay1{
-            position: absolute;     
-            float: left;
-            font-size: 12px;
-            color: blue;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 15%;
-        }
-        .play2{
-            position: absolute;
-            float: right;
-            font-size: 6px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 10%;
-            
-        }
-        .splay2{
-            position: absolute;     
-            float: right;
-            font-size: 10px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 5%;
-        }
-        body{
-            height: 90%;
-            width: 90%;
-        }
-        button{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 15px;
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            height: 5%;
-        }
-        button:hover{
-            background-color: brown;
-            color: white;
-        }
-        #chnp{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 15px;
-            position: absolute;
-            left: 200px;
-            bottom: 0%;
-            width: 30%;
-            height: 5%;
-        
-        }
+
+    .small {
+        width: 23%;
+        height: 23%;
     }
-    @media(max-width:470px){
-        .big{
-            font-size:55px;
-            width: 60px;
-            height: 60px;
-            margin: 2px;
-            left: auto;
-            float: left;
-            background-color: black;
-            align-self:center ;
-            text-align: center;
-            top: 1px;
-            color: white;
-        }
-        .small{
-            font-size: 10px;
-            text-align: center;
-            margin: 2px;
-            background-color: aliceblue;
-            width: 23%;
-            height: 23%;
-            float: left;
-            align-self: center;
-        
-            
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center; 
-            margin: 2px auto;
-        }
-        .small:hover{
-            background-color: rgb(167, 164, 164);
-        }
-        .play1{
-            float: left;
-            font-size: 6px;
-            color: blue;
-            text-align: left;
-            display: block;
-            position: absolute;
-            left: 3%;
-            bottom: 20%;
-        
-        
-        }
-    
-        .splay1{
-            position: absolute;     
-            float: left;
-            font-size: 12px;
-            color: blue;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 15%;
-        }
-        .play2{
-            position: absolute;
-            float: right;
-            font-size: 6px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 10%;
-            
-        }
-        .splay2{
-            position: absolute;     
-            float: right;
-            font-size: 10px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 5%;
-        }
-        body{
-            height: 90%;
-            width: 90%;
-        }
-        button{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 15px;
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            height: 5%;
-        }
-        button:hover{
-            background-color: brown;
-            color: white;
-        }
-        #chnp{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 15px;
-            position: absolute;
-            left: 200px;
-            bottom: 0%;
-            width: 30%;
-            height: 5%;
-        
-        }
+
+    .play1, .play2 {
+        font-size: 6px;
     }
-    @media(max-width:360px){
-        .big{
-            font-size:55px;
-            width: 50px;
-            height: 50px;
-            margin: 2px;
-            left: auto;
-            float: left;
-            background-color: black;
-            align-self:center ;
-            text-align: center;
-            top: 1px;
-            color: white;
-        }
-        .small{
-            font-size: 10px;
-            text-align: center;
-            margin: 2px;
-            background-color: aliceblue;
-            width: 23%;
-            height: 23%;
-            float: left;
-            align-self: center;
-        
-            
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center; 
-            margin: 2px auto;
-        }
-        .small:hover{
-            background-color: rgb(167, 164, 164);
-        }
-        .play1{
-            float: left;
-            font-size: 6px;
-            color: blue;
-            text-align: left;
-            display: block;
-            position: absolute;
-            left: 3%;
-            bottom: 20%;
-        
-        
-        }
-    
-        .splay1{
-            position: absolute;     
-            float: left;
-            font-size: 12px;
-            color: blue;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 15%;
-        }
-        .play2{
-            position: absolute;
-            float: right;
-            font-size: 6px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 10%;
-            
-        }
-        .splay2{
-            position: absolute;     
-            float: right;
-            font-size: 10px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 5%;
-        }
-        body{
-            height: 90%;
-            width: 90%;
-        }
-        button{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 15px;
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            height: 5%;
-        }
-        button:hover{
-            background-color: brown;
-            color: white;
-        }
-        #chnp{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 15px;
-            position: absolute;
-            left: 200px;
-            bottom: 0%;
-            width: 30%;
-            height: 5%;
-        
-        }
+
+    .splay1, .splay2 {
+        font-size: 7px;
     }
-    @media(max-width:300px){
-        .big{
-            font-size:55px;
-            width: 40px;
-            height: 40px;
-            margin: 2px;
-            left: auto;
-            float: left;
-            background-color: black;
-            align-self:center ;
-            text-align: center;
-            top: 1px;
-            color: white;
-        }
-        .small{
-            font-size: 10px;
-            text-align: center;
-            margin: 2px;
-            background-color: aliceblue;
-            width: 23%;
-            height: 23%;
-            float: left;
-            align-self: center;
-        
-            
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center; 
-            margin: 2px auto;
-        }
-        .small:hover{
-            background-color: rgb(167, 164, 164);
-        }
-        .play1{
-            float: left;
-            font-size: 6px;
-            color: blue;
-            text-align: left;
-            display: block;
-            position: absolute;
-            left: 3%;
-            bottom: 20%;
-        
-        
-        }
-    
-        .splay1{
-            position: absolute;     
-            float: left;
-            font-size: 7px;
-            color: blue;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 15%;
-        }
-        .play2{
-            position: absolute;
-            float: right;
-            font-size: 5px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 10%;
-            
-        }
-        .splay2{
-            position: absolute;     
-            float: right;
-            font-size: 7px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 5%;
-        }
-        body{
-            height: 90%;
-            width: 90%;
-        }
-        button{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            height: 5%;
-        }
-        button:hover{
-            background-color: brown;
-            color: white;
-        }
-        #chnp{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 10px;
-            position: absolute;
-            left: 200px;
-            bottom: 0%;
-            width: 30%;
-            height: 5%;
-        
-        }
-    }
-    @media(max-width:250px){
-        .big{
-            font-size:55px;
-            width: 30px;
-            height: 30px;
-            margin: 2px;
-            left: auto;
-            float: left;
-            background-color: black;
-            align-self:center ;
-            text-align: center;
-            top: 1px;
-            color: white;
-        }
-        .small{
-            font-size: 10px;
-            text-align: center;
-            margin: 2px;
-            background-color: aliceblue;
-            width: 18%;
-            height: 18%;
-            float: left;
-            align-self: center;
-        
-            
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center; 
-            margin: 2px auto;
-        }
-        .small:hover{
-            background-color: rgb(167, 164, 164);
-        }
-        .play1{
-            float: left;
-            font-size: 6px;
-            color: blue;
-            text-align: left;
-            display: block;
-            position: absolute;
-            left: 3%;
-            bottom: 20%;
-        
-        
-        }
-    
-        .splay1{
-            position: absolute;     
-            float: left;
-            font-size: 7px;
-            color: blue;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 15%;
-        }
-        .play2{
-            position: absolute;
-            float: right;
-            font-size: 5px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 10%;
-            
-        }
-        .splay2{
-            position: absolute;     
-            float: right;
-            font-size: 7px;
-            color: red;
-            text-align: left;
-            display: flex;
-            left: 3%;
-            bottom: 5%;
-        }
-        body{
-            height: 90%;
-            width: 90%;
-        }
-        button{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            height: 5%;
-        }
-        button:hover{
-            background-color: brown;
-            color: white;
-        }
-        #chnp{
-            margin: auto;
-            display: block;
-            border-radius: 12px;
-            font-size: 10px;
-            position: absolute;
-            left: 200px;
-            bottom: 0%;
-            width: 30%;
-            height: 5%;
-        
-        }
-    }
-    
-    
+}
