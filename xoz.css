@@ -143,6 +143,15 @@ main {
     .splay1, .splay2 {
         font-size: 12px;
     }
+    .play1, .play2 {
+        font-size: 7px;
+        bottom: 20%;
+    }
+
+    .splay1, .splay2 {
+        font-size: 15px;
+        bottom: 10%;
+    }
 }
 
 @media (max-width: 300px) {
@@ -164,4 +173,14 @@ main {
     .splay1, .splay2 {
         font-size: 7px;
     }
+    .play1, .play2 {
+        font-size: 7px;
+        bottom: 20%;
+    }
+
+    .splay1, .splay2 {
+        font-size: 15px;
+        bottom: 10%;
+    }
 }
+
