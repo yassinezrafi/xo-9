@@ -8,6 +8,7 @@ let spl1=0;
 let spl2=0;
 let px="0";
 let test=true
+let ch2=""
 
 function move(ch) {
     test=false
@@ -21,12 +22,13 @@ function move(ch) {
         document.getElementById(ch).innerHTML = p;
         smallcolor(ch,p)
         ch1=ch[0]
-        
+        ch2+="#"+ch
         if (verifsmall(ch1)) {
             document.getElementById(ch1).innerHTML = p;
 
             if(verifbig()){
                 alert(p + " : won");
+
                 if (p === p1) {
                     spl1++;   
                 } else {
@@ -101,7 +103,7 @@ function verifbig() {
     let d8 = document.getElementById("8").innerHTML.trim();
     let d9 = document.getElementById("9").innerHTML.trim();
 
-    if (d1 === d2 && d2 === d3 && d1 !== "") return true;
+    if (d1 === d2 && d2 === d3 && d1 !== "") return true
     if (d4 === d5 && d5 === d6 && d4 !== "") return true;
     if (d7 === d8 && d8 === d9 && d7 !== "") return true;
 
@@ -128,6 +130,7 @@ function restart() {
     x="0"
     p = "x";
     test=true
+    ch2=""
     
     }
     function changecolor(x) {
@@ -176,4 +179,22 @@ function switchPlayer() {
     }
     }}
 
-    
+    function retur(){
+        ch4=ch2.substring(ch2.lastIndexOf("#")+1,ch2.length)
+        d=document.getElementById(ch4[0]).innerHTML.trim()
+        if(!(d=="x"||d=="o")){
+        document.getElementById(x).style.backgroundColor = "black"
+        ch4=ch2.substring(ch2.lastIndexOf("#")+1,ch2.length)
+        ch2=ch2.substring(0,ch2.lastIndexOf("#"))
+        x=ch4[0]
+        document.getElementById(ch4).innerHTML=""
+        document.getElementById(ch4).style.backgroundColor = "aliceblue"
+        document.getElementById(x).style.backgroundColor = "gray"
+        change()
+    }
+        if(ch2==""){
+            document.getElementById(x).style.backgroundColor = "black"
+            x="0"
+
+        }
+    }
